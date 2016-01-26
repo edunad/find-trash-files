@@ -1,0 +1,8 @@
+C:\Projects\find-trash-files\find-trash-files\bin\Debug\find-trash-files.exe.config
+C:\Projects\find-trash-files\find-trash-files\bin\Debug\find-trash-files.exe
+C:\Projects\find-trash-files\find-trash-files\bin\Debug\find-trash-files.pdb
+C:\Projects\find-trash-files\find-trash-files\bin\Debug\ClosedXML.dll
+C:\Projects\find-trash-files\find-trash-files\bin\Debug\ClosedXML.xml
+C:\Projects\find-trash-files\find-trash-files\obj\Debug\find-trash-files.csprojResolveAssemblyReference.cache
+C:\Projects\find-trash-files\find-trash-files\obj\Debug\find-trash-files.exe
+C:\Projects\find-trash-files\find-trash-files\obj\Debug\find-trash-files.pdb
