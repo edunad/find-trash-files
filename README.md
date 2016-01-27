@@ -1,6 +1,6 @@
 # find-trash-files
-<span>Allows you to find duplicated / empty files on a folder and creates a report of those files</span>
-<span>This was created during a innovation time, so there's tons of space for improvements!</span>
+Allows you to find duplicated / empty files on a folder and creates a report of those files</br>
+<b>This was created during a innovation time, so there's tons of space for improvements!</b>
 <h2> How to use it? </h2>
 
 <table>
