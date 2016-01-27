@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Find-trash-files by edunad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Find-trash-files</h1>
+      <h2 class="project-tagline">Allows you to find duplicated / empty files on a folder.</h2>
+      <a href="https://github.com/edunad/find-trash-files" class="btn">View on GitHub</a>
+      <a href="https://github.com/edunad/find-trash-files/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/edunad/find-trash-files/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="find-trash-files" class="anchor" href="#find-trash-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>find-trash-files</h1>
+
+<p>Allows you to find duplicated / empty files on a folder and creates a report of those files
+This was created during a innovation time, so there's tons of space for improvements!</p>
+
+<h2>
+<a id="-how-to-use-it-" class="anchor" href="#-how-to-use-it-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a> How to use it? </h2>
+
+<table>
+    <tbody>
+        <tr>
+        <td>
+            <b>Simple Usage :</b>
+        </td>
+        <td>
+            <code>
+                find-trash-files.exe "inputFolder" "outputLocation"
+            </code>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>Advanced Usage :</b>
+        </td>
+        <td>
+            <h4>
+<a id="disable-ui" class="anchor" href="#disable-ui" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disable UI:</h4>
+            <code>
+                find-trash-files.exe "inputFolder" "outputLocation" -disableUI
+            </code>
+            <h4>
+<a id="servermode-instead-of-an-excel-format-the-ouput-is-a-txt" class="anchor" href="#servermode-instead-of-an-excel-format-the-ouput-is-a-txt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Servermode (instead of an excel format the ouput is a txt):</h4>
+            <code>
+                find-trash-files.exe "inputFolder" "outputLocation" -servermode
+            </code>
+            <h4>
+<a id="filter-allows-you-to-filter-file-formats--folders" class="anchor" href="#filter-allows-you-to-filter-file-formats--folders" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Filter (allows you to filter file formats / folders):</h4>
+            <code>
+                find-trash-files.exe "inputFolder" "outputLocation" -filter ".js,folderBlalala,.cake"
+            </code>
+        </td>
+        </tr>
+        <tr>
+        <td>
+            <b>Example :</b>
+        </td>
+        <td>
+            <code>
+                find-trash-files.exe "C:\Projects\projectFolder" "C:\Projects"
+            </code>
+        </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>
+<a id="-what-do-the-symbols--colors-mean-" class="anchor" href="#-what-do-the-symbols--colors-mean-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a> What do the symbols / colors mean? </h2>
+
+<h3>
+<a id="there-are-3-phases" class="anchor" href="#there-are-3-phases" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>There are 3 phases</h3>
+
+<h5>
+<a id="phase-1---finding-files-and-pre-checking" class="anchor" href="#phase-1---finding-files-and-pre-checking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Phase 1 - Finding Files and pre-checking</h5>
+
+<p>The program is detecting the files in the inputed folder and creating the data to later on parse them
+After that is complete, it will detect possible duplicated files</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                =
+            </td>
+            <td>
+                File is not duplicated / empty (White)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="http://i.imgur.com/GIYFtm6.png">
+            </td>
+            <td>
+                Duplicated file found (Red)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="http://i.imgur.com/ip6MVyY.png">
+            </td>
+            <td>
+                Duplicated image file found (Dark red)
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h5>
+<a id="phase-2---comparison" class="anchor" href="#phase-2---comparison" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Phase 2 - Comparison</h5>
+
+<p>The program will now compare the current file with the all the possible duplicates</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <img src="http://i.imgur.com/rI5YvzR.png">
+            </td>
+            <td>
+                Compared duplicated files (Purple)
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h5>
+<a id="phase-3---cleanup" class="anchor" href="#phase-3---cleanup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Phase 3 - Cleanup</h5>
+
+<p>In this phase, the program will prepare it self to generate the excel / text output</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <img src="http://i.imgur.com/J3o9bA1.png">
+            </td>
+            <td>
+                File ready for output (Green)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="http://i.imgur.com/KF0ipM6.png">
+            </td>
+            <td>
+                Image ready for output (Red with !!)
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>
+<a id="how-can-i-contribute" class="anchor" href="#how-can-i-contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How can i contribute?</h2>
+
+<p>Easy! Fork the project, add your changes / improvements and create a pull request!</p>
+
+<h2>
+<a id="screenies" class="anchor" href="#screenies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenies</h2>
+
+<p><img src="http://i.imgur.com/VyOM6Qa.png">
+<img src="http://i.imgur.com/8UsK4Qn.png">
+<img src="http://i.imgur.com/baRZp2z.png"></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/edunad/find-trash-files">Find-trash-files</a> is maintained by <a href="https://github.com/edunad">edunad</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
