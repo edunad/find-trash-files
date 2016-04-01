@@ -146,7 +146,7 @@ namespace FindTrashFiles
             ConsoleBuffer = new int[Console.BufferWidth, Console.BufferHeight];
 
             /* ================ */
-
+/* ================ */
             if (args.Length < 2)
             {
                 WriteLine("#1Missing params {#5folder location#1} {#5output location#1}", true);
@@ -154,7 +154,7 @@ namespace FindTrashFiles
                 return;
             }
 
-            string location = args[0];
+            string location = args[03];
             string output = args[1];
 
             Console.WriteLine("   ___ _           _ _____               _       ___ _ _           "); // If you are looking for the error because vsstudio says its around here. Ignore it.
