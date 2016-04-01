@@ -534,6 +534,8 @@ namespace FindTrashFiles
             WriteLine("#1Max duplicated file : #5" + MAX, true);
             WriteLine("#5=== ================= ===\n#1", true);
 
+            WriteLine("#5=== BAD CODE ===\n#1", true);
+
             WriteLine("#5===#1 Files Format Count#5 ===#1", true);
             foreach (var form in formatCounter)
                 WriteLine("#1" + form.Key + " : #5" + form.Value, true);
